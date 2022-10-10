@@ -70,7 +70,7 @@ RUN apt-get update \
  && apt-get install -y software-properties-common \
  && add-apt-repository ppa:oibaf/graphics-drivers -y \
  && wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key | apt-key add - \
- && echo 'deb [arch=amd64] https://repo.radeon.com/amdgpu/latest/ubuntu focal main' | tee /etc/apt/sources.list.d/amdgpu.list \
+ && echo 'deb [arch=amd64] https://repo.radeon.com/amdgpu/latest/ubuntu focal main' | tee /etc/apt/sources.list.d/rocm.list \
  && apt-get update \
  && apt-get install -y \
 	vainfo \
