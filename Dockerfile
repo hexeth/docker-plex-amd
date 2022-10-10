@@ -72,11 +72,12 @@ RUN apt-get update \
  && apt-get update \
  && apt-get install -y \
 	vainfo \
-	mesa-amdgpu-va-drivers \
-	mesa-amdgpu-vdpau-drivers\
+	mesa-va-drivers \
+	mesa-vdpau-drivers \
 	libdrm-amdgpu1 \
 	libavutil56 \
- && apt-get clean
+    amdgpu
+ && apt-get clean \
 
 # Copy lib files
 COPY --from=amd $OUTPUT/usr/lib/dri/*.so* /usr/lib/plexmediaserver/lib/dri/
