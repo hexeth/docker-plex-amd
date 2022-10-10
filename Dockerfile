@@ -72,8 +72,8 @@ RUN apt-get update \
  && apt-get update \
  && apt-get install -y \
 	vainfo \
-	mesa-va-drivers \
-	mesa-vdpau-drivers \
+	mesa-amdgpu-va-drivers \
+	mesa-amdgpu-vdpau-drivers\
 	libdrm-amdgpu1 \
 	libavutil56 \
  && apt-get clean
