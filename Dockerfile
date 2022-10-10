@@ -76,7 +76,7 @@ RUN apt-get update \
 	mesa-vdpau-drivers \
 	libdrm-amdgpu1 \
 	libavutil56 \
-    amdgpu
+    amdgpu \
  && apt-get clean \
 
 # Copy lib files
