@@ -79,7 +79,7 @@ RUN apt-get update \
 	libdrm-amdgpu1 \
 	libavutil56 \
     amdgpu \
- && apt-get clean \
+ && apt-get clean
 
 # Copy lib files
 COPY --from=amd $OUTPUT/usr/lib/dri/*.so* /usr/lib/plexmediaserver/lib/dri/
