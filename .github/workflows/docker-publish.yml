@@ -9,11 +9,11 @@ on:
   push:
     branches:
       - master
-      - develop
+      - dev
   pull_request:
     branches: 
       - master
-      - develop
+      - dev
 
 
 env:
