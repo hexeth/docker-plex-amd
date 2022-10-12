@@ -18,3 +18,11 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: docker build . --file Dockerfile
+    
+    - uses: actions/upload-artifact@v3
+      name: Product artifact of libs
+      with:
+          name: dist-without-markdown
+          path: |
+            /usr/lib/plexmediaserver/lib/*
+            /usr/lib/plexmediaserver/lib/dri/*
